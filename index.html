@@ -1,1 +1,167 @@
-<h1>Hello</h>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Baytech San Jose</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-160-flr1-lobby">
+        <li class="text">160 Flr1 Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-160-flr2-lobby">
+        <li class="text">160 Flr2 Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-170-flr1-lobby">
+        <li class="text">170 Flr1 Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-170-lobby-stair">
+        <li class="text">170 Lobby Stair</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-170-flr1-team-rm-venice">
+        <li class="text">170 Flr1 Team RM Venice</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-170-flr2-glass-beach">
+        <li class="text">170 Flr2 Glass Beach</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-170-flr2-carmel">
+        <li class="text">170 Flr2 Carmel</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-170-flr2-down-stair">
+        <li class="text">170 Flr2 Down Stair</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-170-flr2-game-area">
+        <li class="text">170 Flr2 Game Area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-170-flr2-hallway-next-to-carmel">
+        <li class="text">170 Flr2 Hallway next to Carmel</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-170-flr2-hallway-next-elevator">
+        <li class="text">170 Flr2 Hallway next Elevator</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-170-flr2-hallway-next-huddle-a">
+        <li class="text">170 Flr2 Hallway next Huddle A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-170-flr2-hallway-next-idf">
+        <li class="text">170 Flr2 Hallway next IDF</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-170-flr2-hallway-next-jade-cove">
+        <li class="text">170 Flr2 Hallway next Jade Cove</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14--170-flr2-hallway-next-muir">
+        <li class="text"> 170 Flr2 Hallway next Muir</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-170-flr2-huddle-b">
+        <li class="text">170 Flr2 Huddle B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-170-flr2-huddle-b-hallway">
+        <li class="text">170 Flr2 Huddle B Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-170-flr2-idf">
+        <li class="text">170 Flr2 IDF</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-170-flr2-idf-front-rack">
+        <li class="text">170 Flr2 IDF Front Rack</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-170-flr2-idf-back-rack">
+        <li class="text">170 Flr2 IDF Back Rack</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-170-flr2-rd-hallway">
+        <li class="text">170 Flr2 RD Hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-170-flr2-team-rm-baker">
+        <li class="text">170 Flr2 Team RM Baker</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-170-flr2-team-rm-jade-cove">
+        <li class="text">170 Flr2 Team RM Jade Cove</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-170-flr2-team-rm-muir">
+        <li class="text">170 Flr2 Team RM Muir</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-170-flr2-team-rm-rodeo">
+        <li class="text">170 Flr2 Team RM Rodeo</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
